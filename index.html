@@ -2,47 +2,435 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ELedara Academy</title>
+<title>ELedara Academy 💎</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#080d19;--panel:#111a2b;--panel2:#0c1423;--line:#26344b;--gold:#e9b84c;--red:#e34c58;--muted:#9aabc2;--green:#38c995}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0,#18233a 0,transparent 36%),var(--bg);color:#f5f7fb;font-family:Cairo,Arial,sans-serif;min-height:100vh}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}.wrap{max-width:1100px;margin:auto;padding:18px}.top{position:sticky;top:0;z-index:5;background:#0a1120ed;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.topin{max-width:1100px;margin:auto;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-weight:900;color:var(--gold);font-size:20px}.nav{display:flex;gap:8px;flex-wrap:wrap}.btn{padding:10px 15px;border-radius:12px;background:#26344b;color:white;font-weight:800}.btn.primary{background:linear-gradient(120deg,#c9364d,#e5a936)}.btn.green{background:#087e62}.btn.ghost{background:transparent;border:1px solid var(--line)}.hero{padding:34px 24px;border:1px solid #5d3944;background:linear-gradient(120deg,#2a1422,#111a2b 65%);border-radius:22px;margin:24px 0}.hero h1{font-size:clamp(26px,5vw,42px);margin:0 0 8px}.hero p,.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}.card{background:linear-gradient(160deg,var(--panel),#0d1524);border:1px solid var(--line);border-radius:18px;padding:18px;margin:14px 0}.card h2,.card h3{margin:0 0 12px}.field{display:grid;gap:6px;margin:10px 0}.field label{font-size:13px;color:var(--muted)}input,select,textarea{width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:11px;color:white;padding:12px;outline:none}input:focus,textarea:focus,select:focus{border-color:var(--gold)}.row{display:flex;gap:10px;flex-wrap:wrap}.row>*{flex:1;min-width:150px}.hidden{display:none!important}.notice{padding:12px;border-radius:12px;background:#1a293c;color:#d8e4f4;margin:10px 0}.error{background:#3a1822;color:#ffc4ca}.success{background:#12362e;color:#b7f6df}.item{padding:14px;border:1px solid var(--line);border-radius:13px;background:#0b1423;margin:9px 0}.item h3{margin:0 0 5px}.pill{font-size:12px;color:var(--gold)}.question{padding:16px;background:#0b1423;border:1px solid var(--line);border-radius:14px;margin:12px 0}.option{display:flex;gap:9px;align-items:center;padding:9px;border:1px solid var(--line);border-radius:10px;margin:7px 0}.option input{width:auto}.stat{font-size:26px;font-weight:900;color:var(--gold)}footer{text-align:center;color:#73839b;padding:30px 12px;border-top:1px solid var(--line);margin-top:40px}table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:10px;border-bottom:1px solid var(--line);text-align:right}@media(max-width:600px){.topin{align-items:flex-start;flex-direction:column}.nav{width:100%}.nav button{flex:1}.wrap{padding:12px}.hero{padding:22px}}
-</style></head>
+:root{--bg:#080d19;--panel:#111a2b;--panel2:#0c1423;--line:#26344b;--gold:#e9b84c;--red:#e34c58;--muted:#9aabc2;--green:#38c995}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 80% 0,#18233a 0,transparent 36%),var(--bg);color:#f5f7fb;font-family:Cairo,Arial,sans-serif;min-height:100vh}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer;border:0}
+.wrap{max-width:1100px;margin:auto;padding:18px}
+.top{position:sticky;top:0;z-index:5;background:#0a1120ed;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.topin{max-width:1100px;margin:auto;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-weight:900;color:var(--gold);font-size:20px}
+.nav{display:flex;gap:8px;flex-wrap:wrap}
+.btn{padding:10px 15px;border-radius:12px;background:#26344b;color:white;font-weight:800;transition:0.2s}
+.btn:hover{opacity:0.9}
+.btn.primary{background:linear-gradient(120deg,#c9364d,#e5a936)}
+.btn.green{background:#087e62}
+.btn.red{background:#9b2231}
+.btn.ghost{background:transparent;border:1px solid var(--line)}
+.hero{padding:34px 24px;border:1px solid #5d3944;background:linear-gradient(120deg,#2a1422,#111a2b 65%);border-radius:22px;margin:24px 0}
+.hero h1{font-size:clamp(26px,5vw,42px);margin:0 0 8px}
+.hero p,.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.card{background:linear-gradient(160deg,var(--panel),#0d1524);border:1px solid var(--line);border-radius:18px;padding:18px;margin:14px 0}
+.card h2,.card h3{margin:0 0 12px}
+.field{display:grid;gap:6px;margin:10px 0}
+.field label{font-size:13px;color:var(--muted)}
+input,select,textarea{width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:11px;color:white;padding:12px;outline:none}
+input:focus,textarea:focus,select:focus{border-color:var(--gold)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.row>*{flex:1;min-width:150px}
+.hidden{display:none!important}
+.notice{padding:12px;border-radius:12px;background:#1a293c;color:#d8e4f4;margin:10px 0}
+.error{background:#3a1822;color:#ffc4ca}
+.success{background:#12362e;color:#b7f6df}
+.item{padding:14px;border:1px solid var(--line);border-radius:13px;background:#0b1423;margin:9px 0;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.item-info{flex:1;min-width:200px}
+.item h3{margin:0 0 5px}
+.pill{font-size:12px;color:var(--gold);font-weight:700}
+.badge{display:inline-block;padding:4px 10px;border-radius:8px;font-size:12px;font-weight:700;background:#1e2d45;color:var(--gold)}
+.question{padding:16px;background:#0b1423;border:1px solid var(--line);border-radius:14px;margin:12px 0}
+.option{display:flex;gap:9px;align-items:center;padding:10px;border:1px solid var(--line);border-radius:10px;margin:7px 0;cursor:pointer}
+.option:hover{border-color:var(--gold)}
+.option input{width:auto}
+.stat{font-size:26px;font-weight:900;color:var(--gold)}
+.timer{position:sticky;top:65px;z-index:4;background:#2a1422;border:1px solid var(--red);padding:10px 16px;border-radius:12px;text-align:center;font-weight:800;color:#ffc4ca;margin-bottom:14px}
+footer{text-align:center;color:#73839b;padding:30px 12px;border-top:1px solid var(--line);margin-top:40px}
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:500px}
+td,th{padding:10px;border-bottom:1px solid var(--line);text-align:right}
+th{color:var(--gold)}
+@media(max-width:600px){.topin{align-items:flex-start;flex-direction:column}.nav{width:100%}.nav button{flex:1}.wrap{padding:12px}.hero{padding:22px}}
+</style>
+</head>
 <body>
-<header class="top"><div class="topin"><div class="brand">💎 ELedara Academy</div><div class="nav"><button class="btn ghost" onclick="show('home')">الرئيسية</button><button class="btn ghost" onclick="show('library')">المحاضرات</button><button class="btn ghost" onclick="show('exams')">الامتحانات</button><button class="btn primary" id="authNav" onclick="show('auth')">دخول الطلاب</button><button class="btn" id="adminNav" onclick="show('admin')">الإدارة</button></div></div></header>
+<header class="top">
+  <div class="topin">
+    <div class="brand">💎 ELedara Academy</div>
+    <div class="nav">
+      <button class="btn ghost" onclick="show('home')">الرئيسية</button>
+      <button class="btn ghost" onclick="show('library')">المحاضرات</button>
+      <button class="btn ghost" onclick="show('exams')">الامتحانات</button>
+      <button class="btn primary" id="authNav" onclick="show('auth')">دخول الطلاب</button>
+      <button class="btn" id="adminNav" onclick="show('admin')">الإدارة</button>
+    </div>
+  </div>
+</header>
+
 <main class="wrap">
-<section id="home"><div class="hero"><span class="pill">منصة الدفعة التعليمية</span><h1>تعلم، اختبر، وتابع مستواك</h1><p>كل محاضراتك وامتحاناتك ونتائجك في مكان واحد، بإدارة سهلة من لوحة تحكم ELedara Academy.</p><button class="btn primary" onclick="show('exams')">استعرض الامتحانات</button></div><div class="grid"><div class="card"><div class="stat" id="countCourses">—</div><div class="muted">مادة ومحاضرة منشورة</div></div><div class="card"><div class="stat" id="countExams">—</div><div class="muted">امتحان متاح</div></div><div class="card"><div class="stat" id="myScore">—</div><div class="muted">مجموع درجاتك</div></div></div><div class="card"><h2>أهلاً بيكم في ELedara Academy</h2><p class="muted">منصة تعليمية للمواد والمحاضرات والاختبارات الإلكترونية. سجّل دخولك لمتابعة نتيجتك ومحاولاتك.</p></div><div class="card"><h2>لوحة الشرف</h2><div id="leaders" class="muted">سجّل الدخول لعرض ترتيب الطلاب بعد تفعيل إعدادات الإدارة.</div></div></section>
-<section id="auth" class="hidden"><div class="card" style="max-width:520px;margin:30px auto"><h2>حساب الطالب</h2><div class="notice">استخدم بريدك الإلكتروني وكلمة المرور. حساب المدير: a81875622@gmail.com</div><div class="field"><label>البريد الإلكتروني</label><input id="email" type="email" autocomplete="username" placeholder="name@example.com"></div><div class="field"><label>كلمة المرور</label><input id="password" type="password" autocomplete="current-password" placeholder="كلمة المرور"></div><div class="field" id="nameField"><label>الاسم الكامل (للحساب الجديد)</label><input id="fullName" placeholder="اسم الطالب رباعي"></div><div class="row"><button class="btn primary" onclick="register()">إنشاء حساب</button><button class="btn" onclick="login()">تسجيل الدخول</button></div><div id="authMsg"></div></div></section>
-<section id="library" class="hidden"><div class="card"><h2>المواد والمحاضرات</h2><p class="muted">المحاضرات التي يضيفها فريق الإدارة ستظهر هنا.</p><div id="materials"></div></div></section>
-<section id="exams" class="hidden"><div class="card"><h2>الامتحانات المتاحة</h2><div id="examList" class="muted">جاري التحميل...</div></div><div id="takeExam" class="card hidden"></div></section>
-<section id="admin" class="hidden"><div class="card" style="max-width:560px;margin:24px auto"><h2>دخول الإدارة</h2><p class="muted">سجّل الدخول بالبريد المعتمد للمدير. لا تستخدم إنشاء حساب من هنا.</p><div class="field"><label>البريد الإلكتروني للمدير</label><input id="adminEmail" type="email" autocomplete="username" value="a81875622@gmail.com"></div><div class="field"><label>كلمة المرور</label><input id="adminPassword" type="password" autocomplete="current-password" placeholder="كلمة مرور حساب Firebase"></div><div class="row"><button class="btn primary" onclick="adminLogin()">دخول المدير</button><button class="btn" onclick="sendAdminVerification()">إرسال رابط تأكيد البريد</button><button class="btn" onclick="resetAdminPassword()">نسيت كلمة المرور؟</button></div><div id="adminMsg"></div></div><div class="card hidden" id="adminTools">
-<div class="grid"><div class="card"><h3>إضافة مادة / محاضرة</h3><div class="field"><label>اسم المادة</label><input id="matTitle" placeholder="مثال: مبادئ القانون"></div><div class="field"><label>عنوان المحاضرة أو الوصف</label><input id="matDesc" placeholder="المحاضرة الأولى"></div><div class="field"><label>رابط ملف PDF أو فيديو</label><input id="matUrl" placeholder="رابط الملف"></div><button class="btn green" onclick="addMaterial()">نشر المحاضرة</button></div>
-<div class="card"><h3>إنشاء امتحان</h3><div class="field"><label>اسم الامتحان</label><input id="examTitle" placeholder="امتحان مبادئ القانون"></div><div class="field"><label>مدة الامتحان بالدقائق</label><input id="examDuration" type="number" min="1" value="20"></div><div class="field"><label>درجة كل سؤال</label><input id="examMark" type="number" min="1" value="1"></div><button class="btn green" onclick="createExam()">إنشاء الامتحان</button></div></div>
-<div class="card"><h3>إضافة سؤال للامتحان المحدد</h3><div class="field"><label>اختر الامتحان</label><select id="questionExam"></select></div><div class="field"><label>نص السؤال</label><textarea id="questionText" rows="2"></textarea></div><div class="grid"><input id="o0" placeholder="الاختيار الأول"><input id="o1" placeholder="الاختيار الثاني"><input id="o2" placeholder="الاختيار الثالث"><input id="o3" placeholder="الاختيار الرابع"></div><div class="field"><label>الإجابة الصحيحة</label><select id="correct"><option value="0">الأول</option><option value="1">الثاني</option><option value="2">الثالث</option><option value="3">الرابع</option></select></div><button class="btn green" onclick="addQuestion()">حفظ السؤال</button></div>
-<div class="card"><h3>إدارة المحتوى</h3><div id="adminMaterials"></div><div id="adminExams"></div></div></div></div></section>
-</main><footer>جميع الحقوق محفوظة © 2026 — ELedara Academy</footer>
+  <!-- الرئيسية -->
+  <section id="home">
+    <div class="hero">
+      <span class="pill">منصة الدفعة التعليمية</span>
+      <h1>تعلم، اختبر، وتابع مستواك</h1>
+      <p>كل محاضراتك وامتحاناتك ونتائجك في مكان واحد، بإدارة سهلة من لوحة تحكم ELedara Academy.</p>
+      <div class="row" style="max-width:400px">
+        <button class="btn primary" onclick="show('exams')">استعرض الامتحانات</button>
+        <button class="btn" onclick="show('library')">تصفح المحاضرات</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card"><div class="stat" id="countCourses">—</div><div class="muted">مادة ومحاضرة منشورة</div></div>
+      <div class="card"><div class="stat" id="countExams">—</div><div class="muted">امتحان متاح</div></div>
+      <div class="card"><div class="stat" id="myScore">—</div><div class="muted">مجموع درجاتك</div></div>
+    </div>
+
+    <div class="card" id="myAttemptsCard">
+      <h2>سجل درجاتك ومحاولاتك</h2>
+      <div id="myAttempts" class="muted">سجّل الدخول لعرض درجاتك في الامتحانات السابقة.</div>
+    </div>
+
+    <div class="card">
+      <h2>لوحة الشرف (أعلى الدرجات)</h2>
+      <div id="leaders" class="muted">جاري تحميل الترتيب...</div>
+    </div>
+  </section>
+
+  <!-- دخول الطلاب -->
+  <section id="auth" class="hidden">
+    <div class="card" style="max-width:520px;margin:30px auto">
+      <h2>حساب الطالب</h2>
+      <div class="notice">استخدم بريدك الإلكتروني وكلمة المرور. حساب المدير: a81875622@gmail.com</div>
+      <div class="field"><label>البريد الإلكتروني</label><input id="email" type="email" autocomplete="username" placeholder="name@example.com"></div>
+      <div class="field"><label>كلمة المرور</label><input id="password" type="password" autocomplete="current-password" placeholder="كلمة المرور (6 أحرف على الأقل)"></div>
+      <div class="field" id="nameField"><label>الاسم الكامل (لإنشاء حساب جديد)</label><input id="fullName" placeholder="اسم الطالب رباعي"></div>
+      <div class="row">
+        <button class="btn primary" onclick="register()">إنشاء حساب</button>
+        <button class="btn" onclick="login()">تسجيل الدخول</button>
+      </div>
+      <div id="authMsg"></div>
+    </div>
+  </section>
+
+  <!-- المحاضرات -->
+  <section id="library" class="hidden">
+    <div class="card">
+      <h2>المواد والمحاضرات</h2>
+      <p class="muted">المحاضرات والملخصات التي يضيفها فريق الإدارة ستظهر هنا.</p>
+      <div id="materials" class="muted">جاري التحميل...</div>
+    </div>
+  </section>
+
+  <!-- الامتحانات -->
+  <section id="exams" class="hidden">
+    <div class="card">
+      <h2>الامتحانات المتاحة</h2>
+      <div id="examList" class="muted">جاري التحميل...</div>
+    </div>
+    <div id="takeExam" class="card hidden"></div>
+    <div id="examResultBox" class="card hidden"></div>
+  </section>
+
+  <!-- الإدارة -->
+  <section id="admin" class="hidden">
+    <div class="card" id="adminLoginBox" style="max-width:560px;margin:24px auto">
+      <h2>دخول الإدارة</h2>
+      <p class="muted">سجّل الدخول بالبريد المعتمد للمدير.</p>
+      <div class="field"><label>البريد الإلكتروني للمدير</label><input id="adminEmail" type="email" autocomplete="username" value="a81875622@gmail.com"></div>
+      <div class="field"><label>كلمة المرور</label><input id="adminPassword" type="password" autocomplete="current-password" placeholder="كلمة مرور حساب Firebase"></div>
+      <div class="row">
+        <button class="btn primary" onclick="adminLogin()">دخول المدير</button>
+        <button class="btn" onclick="sendAdminVerification()">إرسال رابط تأكيد البريد</button>
+        <button class="btn" onclick="resetAdminPassword()">نسيت كلمة المرور؟</button>
+      </div>
+      <div id="adminMsg"></div>
+    </div>
+
+    <div class="hidden" id="adminTools">
+      <div class="grid">
+        <div class="card">
+          <h3>📚 إضافة مادة / محاضرة</h3>
+          <div class="field"><label>اسم المادة</label><input id="matTitle" placeholder="مثال: مبادئ القانون"></div>
+          <div class="field"><label>عنوان المحاضرة أو الوصف</label><input id="matDesc" placeholder="المحاضرة الأولى - PDF"></div>
+          <div class="field"><label>رابط ملف PDF (Google Drive) أو فيديو</label><input id="matUrl" placeholder="https://drive.google.com/..."></div>
+          <button class="btn green" onclick="addMaterial()">نشر المحاضرة</button>
+        </div>
+
+        <div class="card">
+          <h3>📝 إنشاء امتحان جديد</h3>
+          <div class="field"><label>اسم الامتحان</label><input id="examTitle" placeholder="امتحان مبادئ القانون"></div>
+          <div class="field"><label>مدة الامتحان بالدقائق</label><input id="examDuration" type="number" min="1" value="20"></div>
+          <div class="field"><label>درجة كل سؤال</label><input id="examMark" type="number" min="1" value="1"></div>
+          <button class="btn green" onclick="createExam()">إنشاء الامتحان</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>➕ إضافة سؤال للامتحان المحدد</h3>
+        <div class="field"><label>اختر الامتحان</label><select id="questionExam"></select></div>
+        <div class="field"><label>نص السؤال</label><textarea id="questionText" rows="2" placeholder="اكتب السؤال هنا..."></textarea></div>
+        <div class="grid">
+          <input id="o0" placeholder="الاختيار الأول">
+          <input id="o1" placeholder="الاختيار الثاني">
+          <input id="o2" placeholder="الاختيار الثالث">
+          <input id="o3" placeholder="الاختيار الرابع">
+        </div>
+        <div class="field">
+          <label>الإجابة الصحيحة</label>
+          <select id="correct">
+            <option value="0">الاختيار الأول</option>
+            <option value="1">الاختيار الثاني</option>
+            <option value="2">الاختيار الثالث</option>
+            <option value="3">الاختيار الرابع</option>
+          </select>
+        </div>
+        <button class="btn green" onclick="addQuestion()">حفظ السؤال</button>
+      </div>
+
+      <div class="card">
+        <h3>📊 درجات الطلاب في الامتحانات</h3>
+        <div id="adminResults" class="muted">جاري تحميل الدرجات...</div>
+      </div>
+
+      <div class="card">
+        <h3>⚙️ إدارة المحتوى المنشور</h3>
+        <h4>المحاضرات:</h4>
+        <div id="adminMaterials"></div>
+        <h4 style="margin-top:18px">الامتحانات:</h4>
+        <div id="adminExams"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>جميع الحقوق محفوظة © 2026 — ELedara Academy 💎</footer>
+
 <script type="module">
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js';
 import {getAuth,onAuthStateChanged,createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut,updateProfile,sendEmailVerification,sendPasswordResetEmail} from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js';
-import {getFirestore,collection,addDoc,getDocs,doc,setDoc,getDoc,query,orderBy,where,serverTimestamp,deleteDoc} from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js';
-const firebaseConfig={apiKey:'AIzaSyB2f0yQBjF_zCsFb5bj2E5TEaQ-DDCbZYw',authDomain:'eledara-academy.firebaseapp.com',projectId:'eledara-academy',storageBucket:'eledara-academy.appspot.com',messagingSenderId:'98649965025',appId:'1:98649965025:web:0d878e407cafd5fe1e52a0'};
-const app=initializeApp(firebaseConfig),auth=getAuth(app),db=getFirestore(app);let user=null,profile=null,admin=false,activeExam=null,answers={};
-const $=id=>document.getElementById(id),msg=(id,t,ok=false)=>$(id).innerHTML=`<div class="notice ${ok?'success':'error'}">${t}</div>`;
-window.show=id=>{document.querySelectorAll('main>section').forEach(s=>s.classList.add('hidden'));$(id).classList.remove('hidden');if(id==='library')loadMaterials();if(id==='exams')loadExams();if(id==='admin'&&admin)loadAdmin();};
-window.register=async()=>{try{const name=$('fullName').value.trim(),email=$('email').value.trim(),pass=$('password').value;if(email.toLowerCase()==='a81875622@gmail.com')throw Error('هذا البريد مخصص للمدير. استخدم خانة الإدارة لتسجيل الدخول.');if(!name)throw Error('اكتب اسمك الكامل.');const c=await createUserWithEmailAndPassword(auth,email,pass);await updateProfile(c.user,{displayName:name});await setDoc(doc(db,'users',c.user.uid),{name,email,role:'student',createdAt:serverTimestamp()});msg('authMsg','تم إنشاء الحساب بنجاح.',true)}catch(e){msg('authMsg',friendly(e))}};
-window.login=async()=>{try{await signInWithEmailAndPassword(auth,$('email').value.trim(),$('password').value);msg('authMsg','تم تسجيل الدخول.',true);show('home')}catch(e){msg('authMsg',friendly(e))}};
-window.adminLogin=async()=>{try{const email=$('adminEmail').value.trim().toLowerCase();if(email!=='a81875622@gmail.com')throw Error('هذا البريد غير معتمد كمدير.');await signInWithEmailAndPassword(auth,email,$('adminPassword').value);await auth.currentUser.reload();if(!auth.currentUser.emailVerified){msg('adminMsg','تم تسجيل الدخول، لكن البريد غير مؤكد. اضغط «إرسال رابط تأكيد البريد» ثم افتح رسالة Firebase في بريدك.',false);return;}admin=true;$('adminTools').classList.remove('hidden');msg('adminMsg','تم دخول المدير بنجاح.',true);await loadAdmin();}catch(e){msg('adminMsg',friendly(e))}};
-window.resetAdminPassword=async()=>{try{const email=$('adminEmail').value.trim().toLowerCase();if(email!=='a81875622@gmail.com')throw Error('اكتب بريد المدير المعتمد.');await sendPasswordResetEmail(auth,email);msg('adminMsg','تم إرسال رابط إعادة تعيين كلمة المرور إلى بريدك. افتح Gmail واتبع الرابط.',true);}catch(e){msg('adminMsg',friendly(e))}};
-window.sendAdminVerification=async()=>{try{const email=$('adminEmail').value.trim().toLowerCase();if(email!=='a81875622@gmail.com')throw Error('اكتب بريد المدير المعتمد.');if(!auth.currentUser||auth.currentUser.email.toLowerCase()!==email)await signInWithEmailAndPassword(auth,email,$('adminPassword').value);await sendEmailVerification(auth.currentUser);msg('adminMsg','تم إرسال رسالة تأكيد. افتح بريدك واضغط رابط التأكيد، ثم ارجع وسجّل دخول المدير.',true);}catch(e){msg('adminMsg',friendly(e))}};
-window.logout=()=>signOut(auth);function friendly(e){return ({'auth/invalid-email':'البريد الإلكتروني غير صحيح.','auth/weak-password':'كلمة المرور يجب ألا تقل عن 6 أحرف.','auth/email-already-in-use':'هذا البريد مسجل بالفعل.','auth/invalid-credential':'البريد أو كلمة المرور غير صحيحة.','permission-denied':'الصلاحيات غير مكتملة؛ لم يتم تنفيذ العملية.','unavailable':'تعذر الاتصال. تحقق من الإنترنت.'})[e.code]||e.message||'حدث خطأ غير متوقع.'}
-onAuthStateChanged(auth,async u=>{user=u;profile=null;admin=false;if(u){const s=await getDoc(doc(db,'users',u.uid));if(s.exists())profile=s.data();admin=(u.email||'').toLowerCase()==='a81875622@gmail.com' && u.emailVerified;$('authNav').textContent='خروج';$('authNav').onclick=window.logout;$('myScore').textContent='—';if(profile)$('leaders').textContent=`مرحباً ${profile.name||u.email}`;}else{$('authNav').textContent='دخول الطلاب';$('authNav').onclick=()=>show('auth')}$('adminNav').classList.remove('hidden');if(admin){$('adminTools').classList.remove('hidden');$('adminMsg').innerHTML='';}});
-async function loadMaterials(){try{const s=await getDocs(collection(db,'materials'));$('materials').innerHTML='';$('countCourses').textContent=s.size;s.forEach(d=>{const x=d.data();$('materials').innerHTML+=`<div class="item"><h3>${esc(x.title)}</h3><div class="muted">${esc(x.description||'')}</div>${x.url?`<a class="btn" target="_blank" rel="noopener" href="${safeUrl(x.url)}">فتح المحاضرة</a>`:''}</div>`})}catch(e){$('materials').textContent='تعذر تحميل المحاضرات: '+friendly(e)}}
-async function loadExams(){try{const s=await getDocs(collection(db,'exams'));$('countExams').textContent=s.size;$('examList').innerHTML='';s.forEach(d=>{const x=d.data();$('examList').innerHTML+=`<div class="item"><h3>${esc(x.title)}</h3><p class="muted">المدة: ${x.duration||20} دقيقة · درجة السؤال: ${x.mark||1}</p><button class="btn primary" onclick="beginExam('${d.id}')">ابدأ الامتحان</button></div>`})}catch(e){$('examList').textContent='تعذر تحميل الامتحانات: '+friendly(e)}}
-window.beginExam=async id=>{if(!user){show('auth');return}try{const e=await getDoc(doc(db,'exams',id));if(!e.exists())throw Error('الامتحان غير موجود');const qs=await getDocs(collection(db,'exams',id,'questions'));activeExam={id,...e.data(),questions:qs.docs.map(d=>({id:d.id,...d.data()}))};if(!activeExam.questions.length)throw Error('لم تتم إضافة أسئلة لهذا الامتحان بعد.');answers={};$('takeExam').classList.remove('hidden');$('takeExam').innerHTML=`<h2>${esc(activeExam.title)}</h2><div id="questionArea"></div><button class="btn primary" onclick="submitExam()">تسليم الامتحان</button>`;activeExam.questions.forEach((q,i)=>{const div=document.createElement('div');div.className='question';div.innerHTML=`<b>${i+1}. ${esc(q.text)}</b>`+q.options.map((o,j)=>`<label class="option"><input type="radio" name="q${i}" value="${j}"> ${esc(o)}</label>`).join('');$('questionArea').append(div)});$('takeExam').scrollIntoView({behavior:'smooth'})}catch(e){alert(friendly(e))}};
-window.submitExam=async()=>{try{if(!activeExam) return;let score=0;activeExam.questions.forEach((q,i)=>{const v=document.querySelector(`input[name=q${i}]:checked`);if(v&&Number(v.value)===Number(q.correct))score+=Number(activeExam.mark||1)});await addDoc(collection(db,'users',user.uid,'attempts'),{examId:activeExam.id,examTitle:activeExam.title,score,total:activeExam.questions.length*Number(activeExam.mark||1),submittedAt:serverTimestamp()});alert(`تم تسجيل المحاولة. نتيجتك: ${score} من ${activeExam.questions.length*Number(activeExam.mark||1)}`);$('takeExam').classList.add('hidden')}catch(e){alert(friendly(e))}};
-async function loadAdmin(){if(!admin){$('adminTools').classList.add('hidden');return}try{const es=await getDocs(collection(db,'exams'));$('questionExam').innerHTML='';$('adminExams').innerHTML='';es.forEach(d=>{$('questionExam').innerHTML+=`<option value="${d.id}">${esc(d.data().title)}</option>`;$('adminExams').innerHTML+=`<div class="item">${esc(d.data().title)} <button class="btn" onclick="removeExam('${d.id}')">حذف</button></div>`});const ms=await getDocs(collection(db,'materials'));$('adminMaterials').innerHTML='';ms.forEach(d=>$('adminMaterials').innerHTML+=`<div class="item">${esc(d.data().title)} <button class="btn" onclick="removeMaterial('${d.id}')">حذف</button></div>`)}catch(e){$('adminTools').insertAdjacentHTML('afterbegin',`<div class="notice error">${friendly(e)}</div>`)}}
-window.addMaterial=async()=>{try{if(!admin)throw Error('غير مصرح');const title=$('matTitle').value.trim();if(!title)throw Error('اكتب اسم المادة');await addDoc(collection(db,'materials'),{title,description:$('matDesc').value.trim(),url:$('matUrl').value.trim(),createdAt:serverTimestamp()});alert('تم نشر المحاضرة');loadAdmin()}catch(e){alert(friendly(e))}};
-window.createExam=async()=>{try{if(!admin)throw Error('غير مصرح');const title=$('examTitle').value.trim();if(!title)throw Error('اكتب اسم الامتحان');const r=await addDoc(collection(db,'exams'),{title,duration:Number($('examDuration').value)||20,mark:Number($('examMark').value)||1,createdAt:serverTimestamp()});alert('تم إنشاء الامتحان');loadAdmin();$('questionExam').value=r.id}catch(e){alert(friendly(e))}};
-window.addQuestion=async()=>{try{if(!admin)throw Error('غير مصرح');const text=$('questionText').value.trim(),options=[0,1,2,3].map(i=>$('o'+i).value.trim());if(!text||options.some(x=>!x))throw Error('اكتب السؤال والاختيارات الأربعة');await addDoc(collection(db,'exams',$('questionExam').value,'questions'),{text,options,correct:Number($('correct').value)});alert('تم حفظ السؤال')}catch(e){alert(friendly(e))}};
-window.removeMaterial=async id=>{if(confirm('حذف المحاضرة؟')){await deleteDoc(doc(db,'materials',id));loadAdmin()}};window.removeExam=async id=>{if(confirm('حذف الامتحان؟')){await deleteDoc(doc(db,'exams',id));loadAdmin()}};
-function esc(v=''){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function safeUrl(v=''){try{const u=new URL(v);return ['https:'].includes(u.protocol)?u.href:'#'}catch{return '#'}}
-</script></body></html>
+import {getFirestore,collection,addDoc,getDocs,doc,setDoc,getDoc,query,orderBy,serverTimestamp,deleteDoc} from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js';
+
+const firebaseConfig={
+  apiKey:'AIzaSyB2f0yQBjF_zCsFb5bj2E5TEaQ-DDCbZYw',
+  authDomain:'eledara-academy.firebaseapp.com',
+  projectId:'eledara-academy',
+  storageBucket:'eledara-academy.appspot.com',
+  messagingSenderId:'98649965025',
+  appId:'1:98649965025:web:0d878e407cafd5fe1e52a0'
+};
+
+const app=initializeApp(firebaseConfig);
+const auth=getAuth(app);
+const db=getFirestore(app);
+
+let user=null,profile=null,admin=false,activeExam=null,examTimer=null;
+const $=id=>document.getElementById(id);
+const msg=(id,t,ok=false)=>$(id).innerHTML=`<div class="notice ${ok?'success':'error'}">${t}</div>`;
+
+window.show=id=>{
+  document.querySelectorAll('main>section').forEach(s=>s.classList.add('hidden'));
+  $(id).classList.remove('hidden');
+  if(id==='home') loadHomeStats();
+  if(id==='library') loadMaterials();
+  if(id==='exams') loadExams();
+  if(id==='admin'&&admin) loadAdmin();
+};
+
+window.register=async()=>{
+  try{
+    const name=$('fullName').value.trim(),email=$('email').value.trim(),pass=$('password').value;
+    if(email.toLowerCase()==='a81875622@gmail.com') throw Error('هذا البريد مخصص للمدير. استخدم خانة الإدارة لتسجيل الدخول.');
+    if(!name) throw Error('اكتب اسمك الكامل.');
+    const c=await createUserWithEmailAndPassword(auth,email,pass);
+    await updateProfile(c.user,{displayName:name});
+    await setDoc(doc(db,'users',c.user.uid),{name,email,role:'student',createdAt:serverTimestamp()});
+    msg('authMsg','تم إنشاء الحساب بنجاح.',true);
+    setTimeout(()=>show('home'),800);
+  }catch(e){msg('authMsg',friendly(e))}
+};
+
+window.login=async()=>{
+  try{
+    await signInWithEmailAndPassword(auth,$('email').value.trim(),$('password').value);
+    msg('authMsg','تم تسجيل الدخول.',true);
+    show('home');
+  }catch(e){msg('authMsg',friendly(e))}
+};
+
+window.adminLogin=async()=>{
+  try{
+    const email=$('adminEmail').value.trim().toLowerCase();
+    if(email!=='a81875622@gmail.com') throw Error('هذا البريد غير معتمد كمدير.');
+    await signInWithEmailAndPassword(auth,email,$('adminPassword').value);
+    await auth.currentUser.reload();
+    if(!auth.currentUser.emailVerified){
+      msg('adminMsg','تم تسجيل الدخول، لكن البريد غير مؤكد. اضغط «إرسال رابط تأكيد البريد» ثم افتح رسالة Firebase في بريدك.',false);
+      return;
+    }
+    admin=true;
+    $('adminLoginBox').classList.add('hidden');
+    $('adminTools').classList.remove('hidden');
+    msg('adminMsg','تم دخول المدير بنجاح.',true);
+    await loadAdmin();
+  }catch(e){msg('adminMsg',friendly(e))}
+};
+
+window.resetAdminPassword=async()=>{
+  try{
+    const email=$('adminEmail').value.trim().toLowerCase();
+    if(email!=='a81875622@gmail.com') throw Error('اكتب بريد المدير المعتمد.');
+    await sendPasswordResetEmail(auth,email);
+    msg('adminMsg','تم إرسال رابط إعادة تعيين كلمة المرور إلى بريدك. افتح Gmail واتبع الرابط.',true);
+  }catch(e){msg('adminMsg',friendly(e))}
+};
+
+window.sendAdminVerification=async()=>{
+  try{
+    const email=$('adminEmail').value.trim().toLowerCase();
+    if(email!=='a81875622@gmail.com') throw Error('اكتب بريد المدير المعتمد.');
+    if(!auth.currentUser||auth.currentUser.email.toLowerCase()!==email) await signInWithEmailAndPassword(auth,email,$('adminPassword').value);
+    await sendEmailVerification(auth.currentUser);
+    msg('adminMsg','تم إرسال رسالة تأكيد. افتح بريدك واضغط رابط التأكيد، ثم ارجع وسجّل دخول المدير.',true);
+  }catch(e){msg('adminMsg',friendly(e))}
+};
+
+window.logout=()=>{
+  if(examTimer) clearInterval(examTimer);
+  signOut(auth);
+};
+
+function friendly(e){
+  return ({
+    'auth/invalid-email':'البريد الإلكتروني غير صحيح.',
+    'auth/weak-password':'كلمة المرور يجب ألا تقل عن 6 أحرف.',
+    'auth/email-already-in-use':'هذا البريد مسجل بالفعل.',
+    'auth/invalid-credential':'البريد أو كلمة المرور غير صحيحة.',
+    'permission-denied':'الصلاحيات غير مكتملة في Firestore Rules؛ تأكد من السماح بالقراءة والكتابة.',
+    'unavailable':'تعذر الاتصال بالإنترنت.'
+  })[e.code]||e.message||'حدث خطأ غير متوقع.';
+}
+
+onAuthStateChanged(auth,async u=>{
+  user=u;profile=null;admin=false;
+  if(u){
+    try{
+      const s=await getDoc(doc(db,'users',u.uid));
+      if(s.exists()) profile=s.data();
+    }catch(_){}
+    admin=(u.email||'').toLowerCase()==='a81875622@gmail.com' && u.emailVerified;
+    $('authNav').textContent='خروج';
+    $('authNav').onclick=window.logout;
+  }else{
+    $('authNav').textContent='دخول الطلاب';
+    $('authNav').onclick=()=>show('auth');
+    $('myScore').textContent='—';
+    $('myAttempts').innerHTML='سجّل الدخول لعرض درجاتك في الامتحانات السابقة.';
+  }
+  if(admin){
+    $('adminLoginBox').classList.add('hidden');
+    $('adminTools').classList.remove('hidden');
+  }else{
+    $('adminLoginBox').classList.remove('hidden');
+    $('adminTools').classList.add('hidden');
+  }
+  loadHomeStats();
+});
+
+async function loadHomeStats(){
+  try{
+    const ms=await getDocs(collection(db,'materials'));
+    $('countCourses').textContent=ms.size;
+  }catch(_){$('countCourses').textContent='0'}
+
+  try{
+    const es=await getDocs(collection(db,'exams'));
+    $('countExams').textContent=es.size;
+  }catch(_){$('countExams').textContent='0'}
+
+  try{
+    const rs=await getDocs(collection(db,'results'));
+    let allResults=[];
+    rs.forEach(d=>allResults.push(d.data()));
+
+    // درجات الطالب الحالي
+    if(user){
+      const mine=allResults.filter(r=>r.userId===user.uid);
+      const totalMyScore=mine.reduce((acc,r)=>acc+(Number(r.score)||0),0);
+      $('myScore').textContent=mine.length?totalMyScore:'0';
+      if(mine.length){
+        $('myAttempts').innerHTML=`<div class="table-wrap"><table><thead><tr><th>الامتحان</th><th>درجتك</th><th>الدرجة النهائية</th></tr></thead><tbody>`+
+        mine.map(r=>`<tr><td>${esc(r.examTitle)}</td><td><b>${r.score}</b></td><td>${r.total}</td></tr>`).join('')+
+        `</tbody></table></div>`;
+      }else{
+        $('myAttempts').innerHTML='لم تقم بأداء أي امتحان بعد.';
+      }
+    }
+
+    // لوحة الشرف
+    if(allResults.length){
+      const board={};
+      allResults.forEach(r=>{
+        const key=r.userId||r.studentName;
+        if(!board[key]) board[key]={name:r.studentName||'طالب',score:0,exams:0};
+        board[key].score+=(Number(r.score)||0);
+        board[key].exams+=1;
+      });
+      const sorted=Object.values(board).sort((a,b)=>b.score-a.score).slice(0,10);
+      $('leaders').innerHTML=`<div class="table-wrap"><table><thead><tr><th>الترتيب</th><th>اسم الطالب</th><th>عدد الامتحانات</th><th>مجموع الدرجات</th></tr></thead><tbody>`+
+      sorted.map((s,idx)=>`<tr><td>#${idx+1}</td><td>${esc(s.name)}</td><td>${s.exams}</td><td><span class="badge">${s.score} نقطة</span></td></tr>`).join('')+
+      `</tbody></table></div>`;
+    }else{
+      $('leaders').textContent='لا توجد نتائج مسجلة بعد. كن أول من يختبر!';
+    }
+  }catch(e){
+    $('leaders').textContent='تعذر تحميل النتائج.';
+  }
+}
+
+async function loadMaterials(){
+  try{
+    const s=await getDocs(collection(db,'materials'));
+    $('materials').innerHTML='';
+    $('countCourses').textContent=s.size;
+    if(s.empty){
+      $('materials').innerHTML='<div class="notice">لا توجد محاضرات منشورة حالياً.</div>';
+      return;
+    }
+    s.forEach(d=>{
+      const x=d.data();
+      $('materials').innerHTML+=`<div class="item"><div class="item-info"><h3>${esc(x.title)}</h3><div class="muted">${esc(x.description||'')}</div></div>${x.url?`<a class="btn primary" target="_blank" rel="noopener" href="${safeUrl(x.url)}">فتح / تحميل</a>`:''}</div>`;
+    });
+  }catch(e){$('materials').textContent='تعذر تحميل المحاضرات: '+friendly(e)}
+}
+
+async function loadExams(){
+  try{
+    const s=await getDocs(collection(db,'exams'));
+    $('countExams').textContent=s.size;
+    $('examList').innerHTML='';
+    if(s.empty){
+      $('examList').innerHTML='<div class="notice">لا توجد امتحانات متاحة حالياً.</div>';
+      return;
+    }
+    s.forEach(d=>{
+      const x=d.data();
+      $('examList').innerHTML+=`<div class="item"><div class="item-info"><h3>${esc(x.title)}</h3><p class="muted" style="margin:0">المدة: ${x.duration||20} دقيقة · درجة السؤال: ${x.mark||1}</p></div><button class="btn primary" onclick="beginExam('${d.id}')">ابدأ الامتحان</button></div>`;
+    });
+  }catch(e){$('examList').textContent='تعذر تحميل الامتحانات: '+friendly(e)}
+}
+
+window.beginExam=async id=>{
+  if(!user){
+    alert('يرجى تسجيل الدخول بحساب الطالب أولاً لأداء الامتحان.');
+    show('auth');
+    return;
+  }
+  try{
+    const e=await getDoc(doc(db,'exams',id));
+    if(!e.exists()) throw Error('الامتحان غير موجود');
+    // قراءة الأسئلة من مجموعة questions وفلترتها بـ examId (مسار فردي مضمون في Firestore)
+        
